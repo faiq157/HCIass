@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.create-note {
+  width: 100%;
+  padding: 10px;
+  background-color: #625bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-item {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.menu-item.new::after {
+  content: 'NEW';
+  color: #ff5a5f;
+  margin-left: 8px;
+}
+
+.settings-logout {
+  position: absolute;
+  bottom: 20px;
+}
+
+.settings, .logout {
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.logout {
+  color: #ff5a5f;
+}
+
+/* Main Content styling */
+.main-content {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.notifications {
+  background-color: #ff5a5f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.stat-item {
+  background-color: #f1f5f9;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.report-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.chart, .traffic-sources, .recent-notesheet {
+  width: 30%;
+  background-color: #f1f5f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.chart-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.chart-controls button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.line-chart {
+  height: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.traffic-sources ul, .recent-notesheet ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.traffic-sources li, .recent-notesheet li {
+  margin: 10px 0;
+}
+
+.recent-notesheet a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #625bff;
+}

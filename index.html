@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <button class="create-note">+ Create New NoteSheet</button>
+      <ul>
+        <li class="menu-item">Dashboard</li>
+        <li class="menu-item">Performance</li>
+        <li class="menu-item new">Clicked</li>
+        <li class="menu-item">Tickets</li>
+        <li class="menu-item">Agents</li>
+        <li class="menu-item">Customers</li>
+        <li class="menu-item">Products</li>
+        <li class="menu-item">Orders</li>
+        <li class="menu-item">Reports</li>
+      </ul>
+      <div class="settings-logout">
+        <div class="settings">Settings</div>
+        <div class="logout">Logout</div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="header">
+        <h1>Hey Mariana -</h1>
+        <input type="text" placeholder="Type to search..." class="search-bar">
+        <div class="user-info">
+          <span class="notifications">2</span>
+          <img src="user-avatar.jpg" alt="User Avatar" class="avatar">
+        </div>
+      </div>
+
+      <section class="stats">
+        <div class="stat-item">Total Notesheet: 12,426</div>
+        <div class="stat-item">Total Pending Notesheet: 2,38,485</div>
+        <div class="stat-item">Total Done Notesheet: 84,382</div>
+        <div class="stat-item">Total Customers: 33,493</div>
+      </section>
+
+      <section class="report-section">
+        <div class="chart">
+          <h3>Notesheet Report</h3>
+          <div class="chart-controls">
+            <button>12 Months</button>
+            <button>6 Months</button>
+            <button>30 Days</button>
+            <button>7 Days</button>
+            <button>Export PDF</button>
+          </div>
+          <div class="line-chart">
+            <!-- Chart visualization would go here, can use Chart.js or any chart library -->
+          </div>
+        </div>
+
+        <div class="traffic-sources">
+          <h3>Traffic Sources</h3>
+          <ul>
+            <li>Direct: 1,43,382</li>
+            <li>Referral: 87,974</li>
+            <li>Social Media: 45,211</li>
+            <li>Twitter: 21,893</li>
+          </ul>
+        </div>
+
+        <div class="recent-notesheet">
+          <h3>Recent Notesheet</h3>
+          <ul>
+            <li>Jenny Wilson - $11,234</li>
+            <li>Devon Lane - $11,159</li>
+            <li>Jane Cooper - $10,483</li>
+            <li>Dianne Russell - $9,084</li>
+          </ul>
+          <a href="#">See all customers</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
